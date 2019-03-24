@@ -2,13 +2,9 @@
 
 const program = require('commander');
 
-program
-  .version(require('./package.json').version)
-  .arguments('<names...>')
-  .action(function (names) {
-    for (let i=0; i<names.length; ++i) {
-      console.log("Hello, " + names[i] + "!");
-    }
-  });
+const packageJson = require('./package.json');
 
-program.parse(process.argv);
+program
+  .version(packageJson.version)
+  .command('hello <names...>', 'says hello to people')
+  .parse(process.argv);

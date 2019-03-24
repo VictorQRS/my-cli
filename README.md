@@ -5,7 +5,7 @@ Source code for my own cli
 Input:
 
 ``` bash
-node ./my.js alan bernard charles
+node ./my.js hello alan bernard charles
 ```
 
 Outputs:
