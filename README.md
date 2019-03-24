@@ -5,11 +5,13 @@ Source code for my own cli
 Input:
 
 ``` bash
-node ./my.js
+node ./my.js alan bernard charles
 ```
 
 Outputs:
 
 ```
-Hello, World!
+Hello, alan!
+Hello, bernard!
+Hello, charles!
 ```

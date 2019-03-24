@@ -4,8 +4,11 @@ const program = require('commander');
 
 program
   .version(require('./package.json').version)
-  .action(function () {
-    console.log("Hello, World!");
+  .arguments('<names...>')
+  .action(function (names) {
+    for (let i=0; i<names.length; ++i) {
+      console.log("Hello, " + names[i] + "!");
+    }
   });
 
 program.parse(process.argv);
