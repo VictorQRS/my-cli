@@ -1,0 +1,18 @@
+{
+  "name": "my",
+  "version": "0.0.1",
+  "description": "my own command-line interface program",
+  "main": "my.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "command-line-interface"
+  ],
+  "author": "torq",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
